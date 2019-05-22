@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ajax-basket</title>
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <script id="id-template" type="text/x-handlebars-template">
+      <h1 class="playerId">{{idKey}}: <span class="textId">{{idValue}}</span></h1>
+    </script>
+
+    <script id="stat-template" type="text/x-handlebars-template">
+      <p class="playerStat">{{keyStat}}: <span class="textStat">{{stat}}</span></p>
+    </script>
+
+    <script id="option-template" type="text/x-handlebars-template">
+      <option class="optionPlayer">{{idValue}}</option>
+    </script>
+
+    <script id="table-template" type="text/x-handlebars-template">
+      <div class="table">
+        <div class="title">
+          <h1>Basket Stats <i class="fas fa-basketball-ball"></i></h1>
+        </div>
+        <select class="choosePlayer"></select>
+        <div class="statsTable"></div>
+      </div>
+    </script>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
